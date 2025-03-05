@@ -9,7 +9,7 @@ const usuarioUseCases = new UsuarioUseCases(new UsuarioRepositoryPostgres);
 router.get("/getUsuarios",async (req: Request, res: Response) => {
     try {
         const usuarios = await usuarioUseCases.getAll();
-        res.status(200).json(usuarios);
+        res.status(200).json("ggggg");
         
     } catch (error) {
         console.error("Error en la actualización:", error);
